@@ -10,5 +10,17 @@ module.exports = {
     develop: {
       port: 8545
     }
+  },
+  compilers: {
+    solc: {
+      version: "0.4.26", // A version or constraint - Ex. "^0.5.0"
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200
+        }
+      }
+    }
   }
 };
+
